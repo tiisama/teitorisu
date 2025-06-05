@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>テトリス</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+<audio id="bgm" autoplay loop>
+  <source src="korobushka.mp3" type="audio/mpeg">
+  あなたのブラウザは audio タグに対応していません。
+</audio>
+
+  <canvas id="tetris" width="240" height="400"></canvas>
+  <script src="tetris.js"></script>
+
+  <div id="controls">
+    ← → : 移動<br>
+    ↓ : 落下<br>
+    Q / W : 回転
+  </div>
+
+  <button id="retry" onclick="location.reload()">↺</button>
+</body>
+
+
+</html>
